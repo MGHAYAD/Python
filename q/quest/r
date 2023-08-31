@@ -1,0 +1,55 @@
+# for i in range(1, 11):
+#     print(i)
+
+
+
+#     # Generate a list of strings. Use a for loop to print each string in uppercase.
+
+
+# list = ["Hello", " Hru", " Whats ur name"]
+# for i in range(len(list)):
+#     print(list[i].upper())
+
+
+# 1. Write a function named `greet` that takes a name as an argument and prints a greeting message, 
+# # such as "Hello, [name]!
+
+# def greet(name):
+#     print("Hello",name)
+# name=(input("whats your name ?"))
+# greet(name)
+
+# Define a function `is_even` that takes an integer as input and returns 
+# `True` if the number is even and `False` otherwise.
+
+# def is_even(num):
+#     if num%2 == 0:
+#         return True
+#     else :
+#         return False
+# num=(int(input("enter your num")))
+# print(is_even(num))
+
+# 5. Create a function `find_max` that takes a list of numbers as an argument and returns the maximum value in the list.
+
+# list [5, 4, 6, 7, 8]
+def find_max(list):
+    max = list[0]
+    for num in list :
+        if num>max:
+             max=num
+    return max
+list=[4, 5, 6, 7, 8]
+print(find_max(list))
+
+#  Write a function `reverse_string` that takes a string as input and returns the string in reverse order.
+
+# "abc"
+# "cba"
+
+def reverse_string(str):
+    s=""
+    for i in range(len(str) - 1, -1, -1):
+        s+=str[i]
+    return s
+print(reverse_string("10"))
